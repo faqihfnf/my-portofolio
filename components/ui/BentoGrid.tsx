@@ -5,7 +5,6 @@ import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import Lottie from "react-lottie";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import CopyButton from "./CopyButton";
 import { IoCopy } from "react-icons/io5";
 
