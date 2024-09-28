@@ -2,8 +2,6 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
-import { BiSolidNavigation } from "react-icons/bi";
-import { FaLocationArrow } from "react-icons/fa6";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 const Hero = () => {
   return (
