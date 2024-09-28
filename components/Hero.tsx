@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { TypewriterEffect } from "./ui/TypeWriterEffect";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36" id="home">
@@ -17,9 +18,12 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-200 max-w-80">Dynamic Web Portofolio with Next.JS</h2>
-          <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Hello, I'm Faqih Nur Fahmi" />
+          <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-8xl font-bold" words="Hello, My Name is Faqih Nur Fahmi" />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">I&apos;m a Web Developer</p>
+          <TypewriterEffect
+            className="mb-10"
+            words={[{ text: "I'm" }, { text: "Web" }, { text: "Developer" }, { text: "&" }, { text: "Tech" }, { text: "Enthusiast" }, { text: "From" }, { text: "Jakarta" }, { text: "-" }, { text: "Indonesia" }]}
+          />
 
           <a href="#about">
             <MagicButton title="Show My Work" icon={<FaArrowUpRightFromSquare />} position="right" />

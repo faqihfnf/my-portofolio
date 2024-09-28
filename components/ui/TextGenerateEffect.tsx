@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const TextGenerateEffect = ({ words, className, filter = true, duration = 0.5 }: { words: string; className?: string; filter?: boolean; duration?: number }) => {
+export const TextGenerateEffect = ({ words, className, filter = true, duration = 0.7 }: { words: string; className?: string; filter?: boolean; duration?: number }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
@@ -15,7 +15,7 @@ export const TextGenerateEffect = ({ words, className, filter = true, duration =
       },
       {
         duration: duration ? duration : 1,
-        delay: stagger(0.2),
+        delay: stagger(0.4),
       }
     );
   }, [scope.current]);
@@ -27,7 +27,7 @@ export const TextGenerateEffect = ({ words, className, filter = true, duration =
           return (
             <motion.span
               key={word + idx}
-              className={`${idx > 1 ? "text-indigo-600" : "dark:text-white text-black"} opacity-0`}
+              className={`${idx > 3 ? "text-indigo-600" : "dark:text-white text-black"} opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
