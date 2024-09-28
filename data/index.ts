@@ -154,6 +154,24 @@ export const testimonials = [
   },
 ];
 
+export const techStackIcons = [
+  {
+    image: "/next.svg",
+  },
+  {
+    image: "/tail.svg",
+  },
+  {
+    image: "/ts.svg",
+  },
+  {
+    image: "/three.svg",
+  },
+  {
+    image: "/c.svg",
+  },
+];
+
 export const companies = [
   {
     id: 1,
