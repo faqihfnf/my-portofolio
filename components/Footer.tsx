@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import CopyButton from "./ui/CopyButton";
-import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
+import { PiPaperPlaneTiltFill } from "react-icons/pi";
 
 function Footer() {
   return (
@@ -16,7 +16,7 @@ function Footer() {
         </h1>
         <p className="text-white md:mt-10 my-5 text-center">Reach out to me today and let's build something great together.</p>
         <a href="mailto:faqih.fnf@gmail.com">
-          <CopyButton title="Let's get in touch" icon={<FaLocationArrow />} position="right" />
+          <CopyButton title="Let's get in touch" icon={<PiPaperPlaneTiltFill />} position="right" />
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">

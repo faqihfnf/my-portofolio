@@ -3,7 +3,7 @@ import React from "react";
 const MagicButton = ({ title, icon, position, handleCLick, otherClasses }: { title: string; icon: React.ReactNode; position: string; handleCLick?: () => void; otherClasses?: string }) => {
   return (
     // Button code
-    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000100,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2 focus:ring-offset-slate-500 hover:text-slate-100 hover:bg-[linear-gradient(90deg,#4F06E0,45%,#3F46E5,55%,#3F46E5)] hover:transition-colors gap-4 ">
+    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000100,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2 focus:ring-offset-slate-500 hover:text-slate-100 hover:bg-[linear-gradient(90deg,#4F06E0,45%,#3F46E5,55%,#3F46E5)] hover:transition-colors gap-2 ">
       {position === "left" && icon}
       {title}
       {position === "right" && icon}

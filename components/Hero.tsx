@@ -4,6 +4,8 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { TypewriterEffect } from "./ui/TypeWriterEffect";
+import { ImDownload } from "react-icons/im";
+
 const Hero = () => {
   return (
     <div className="pb-20 pt-36" id="home">
@@ -25,8 +27,8 @@ const Hero = () => {
             words={[{ text: "I'm" }, { text: "Web" }, { text: "Developer" }, { text: "&" }, { text: "Tech" }, { text: "Enthusiast" }, { text: "From" }, { text: "Jakarta" }, { text: "-" }, { text: "Indonesia" }]}
           />
 
-          <a href="#about">
-            <MagicButton title="Show My Work" icon={<FaArrowUpRightFromSquare />} position="right" />
+          <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+            <MagicButton title="Download CV" icon={<ImDownload />} position="right" />
           </a>
         </div>
       </div>

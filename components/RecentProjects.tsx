@@ -12,12 +12,12 @@ function RecentProjects() {
       <div className="flex flex-wrap items-center justify-center p-4 gap-12 gap-y-2 mt-6">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div key={id} className="flex items-center justify-center lg:min-h-[32.5rem] h-[25rem] sm:w-96 w-[80vw]">
-            <PinContainer title={title} href={link}>
+            <PinContainer title="View This Project" href={link}>
               <div className="relative flex justify-center items-center sm:w-96 w-[80vw] overflow-hidden h-[30vh] mb-10">
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-black-200">
+                <div className="relative w-full h-full overflow-hidden lg:rounded-xl bg-black-200">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <img src={img} alt={title} className="absolute w-full h-full object-cover lg:rounded-xl" />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">{title}</h1>
               <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">{des}</p>
