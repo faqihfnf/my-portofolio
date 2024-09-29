@@ -58,7 +58,7 @@ export const FloatingNav = ({
         {navItems.map((navItem: any, idx: number) => (
           <Link key={`link=${idx}`} href={navItem.link} className={cn("relative dark:text-neutral-50 items-center flex font-bold space-x-1 text-neutral-600 dark:hover:text-indigo-600 hover:text-indigo-500")}>
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="text-sm !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>
