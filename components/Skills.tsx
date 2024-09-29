@@ -1,6 +1,6 @@
 import React from "react";
-import { InfiniteMovingCards } from "./InfiniteMovingCards";
-import { techStackIcons, testimonials } from "@/data";
+import { techStackIcons } from "@/data";
+import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 
 function Skills() {
   return (
