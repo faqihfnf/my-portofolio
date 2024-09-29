@@ -238,15 +238,18 @@ export const workExperience = [
 
 export const socialMedia = [
   {
-    id: 1,
+    id: "1",
     img: "/git.svg",
+    link: "https://github.com/faqihfnf",
   },
   {
-    id: 2,
+    id: "2",
     img: "/twit.svg",
+    link: "https://github.com/faqihfnf",
   },
   {
-    id: 3,
+    id: "3",
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/faqih-nur-fahmi-b51bb1ab/",
   },
 ];

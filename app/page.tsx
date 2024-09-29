@@ -4,9 +4,8 @@ import RecentProjects from "@/components/RecentProjects";
 import Skills from "@/components/Skills";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +17,7 @@ export default function Home() {
         <Skills />
         <RecentProjects />
         <Experience />
+        <Footer />
       </div>
     </main>
   );
